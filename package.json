@@ -1,0 +1,21 @@
+{
+  "name": "siteline-sdk",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gptrends/siteline-sdk-js.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/gptrends/siteline-sdk-js/issues"
+  },
+  "homepage": "https://github.com/gptrends/siteline-sdk-js#readme"
+}
