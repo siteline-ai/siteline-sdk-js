@@ -187,7 +187,14 @@ jobs:
         run: npm ci --prefer-offline --no-audit
 
       - name: Build packages
-        run: npm run build
+        run: |
+          if [[ "${{ matrix.node }}" == "18" ]]; then
+            # Node 18: Build only SDK packages (Next.js 16 requires Node >= 20.9.0)
+            npm run build -w @siteline/core -w @siteline/nextjs
+          else
+            # Node 20+: Build all workspaces including examples
+            npm run build
+          fi
 
       - name: Verify imports
         run: |
