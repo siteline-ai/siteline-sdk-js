@@ -397,7 +397,8 @@ describe('Siteline', () => {
       const client = new Siteline({ websiteKey: validKey, debug: true });
 
       // Spy on send and make it reject
-      const sendSpy = jest.spyOn(client as any, 'send').mockRejectedValue(new Error('Send rejection'));
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const sendSpy = jest.spyOn(client as any, 'send').mockRejectedValue(new Error('Send rejection'));
 
       client.track({
         url: 'https://example.com',

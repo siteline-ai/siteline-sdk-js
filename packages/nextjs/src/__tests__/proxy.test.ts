@@ -11,11 +11,10 @@ import type { SitelineConfig } from '../types';
 describe('withSiteline', () => {
   const validKey = 'siteline_secret_' + 'a'.repeat(32);
   let consoleWarnSpy: jest.SpyInstance;
-  let fetchMock: jest.SpyInstance;
 
   beforeEach(() => {
     consoleWarnSpy = jest.spyOn(console, 'warn').mockImplementation();
-    fetchMock = jest.spyOn(global, 'fetch').mockResolvedValue({
+    jest.spyOn(global, 'fetch').mockResolvedValue({
       ok: true,
       status: 200,
     } as Response);

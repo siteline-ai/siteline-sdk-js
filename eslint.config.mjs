@@ -38,4 +38,12 @@ export default [
 			'no-redeclare': 'off',
 		},
 	},
+	{
+		files: ['**/__tests__/**/*.ts', '**/__tests__/**/*.tsx', '**/*.test.ts', '**/*.test.tsx'],
+		languageOptions: {
+			globals: {
+				...globals.jest,
+			},
+		},
+	},
 ];
