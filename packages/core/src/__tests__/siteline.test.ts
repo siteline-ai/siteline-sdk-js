@@ -96,7 +96,7 @@ describe('Siteline', () => {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
-            'User-Agent': '@siteline/core/1.0.0',
+            'User-Agent': '@siteline/core/1.0.1',
           },
           body: expect.any(String),
         })

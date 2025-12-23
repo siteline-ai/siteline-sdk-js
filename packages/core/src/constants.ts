@@ -1,6 +1,6 @@
 export const DEFAULT_ENDPOINT = 'https://siteline.ai/v1/intake/pageview';
 export const DEFAULT_SDK_NAME = '@siteline/core';
-export const DEFAULT_SDK_VERSION = '1.0.0';
+export const DEFAULT_SDK_VERSION = '1.0.1';
 export const DEFAULT_INTEGRATION_TYPE = 'custom';
 
 export const WEBSITEKEY_PATTERN = /^siteline_secret_[a-f0-9]{32}$/;

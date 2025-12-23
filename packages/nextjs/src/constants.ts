@@ -1,5 +1,5 @@
 export const DEFAULT_SDK_NAME = '@siteline/nextjs';
-export const DEFAULT_SDK_VERSION = '1.0.0';
+export const DEFAULT_SDK_VERSION = '1.0.1';
 export const DEFAULT_INTEGRATION_TYPE = 'nextjs';
 
 export const ENV_VARS = {
