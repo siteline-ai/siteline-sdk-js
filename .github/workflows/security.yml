@@ -76,7 +76,10 @@ jobs:
       - name: TruffleHog scan
         uses: trufflesecurity/trufflehog@main
         with:
-          extra_args: --only-verified --since-commit="" --branch HEAD filesystem .
+          path: ./
+          base: ""
+          head: ${{ github.ref }}
+          extra_args: --only-verified
 
   license-check:
     name: License Compliance
